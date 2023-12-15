@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function unesiTekst()
+		{
+		var p_elementi = document.getElementsByTagName("P");
+		var noviTekst = document.createTextNode("Ovo je novi paragraf\n");
+		p_elementi[2].appendChild(noviTekst);
+		document.body.style = "white-space: pre;"
+		}
+	</script>
+</head>
+<body>
+	<p><a href="#" onclick="unesiTekst()">Kliknite ovdje da dodate novi paragraf</a></p>
+	<p id="thisLocation">Novi paragrafi će se pojaviti ispod</p>
+	<br>
+	<p></p>
+</body>
+</html>
